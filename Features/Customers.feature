@@ -9,8 +9,8 @@ Feature: Customers
     When User clicks on Customers Menu
     And click on customers Menu Item
     And click on Add new button
-#    Then User can view Add new customer page
-#    When User enters customer info
-#    And click on Save button
-#    Then User can view confirmation message "The new customer has been added successfully."
+    Then User can view Add new customer page
+    When User enters customer info
+    And click on Save button
+    Then User can view confirmation message "The new customer has been added successfully."
     And close browser
