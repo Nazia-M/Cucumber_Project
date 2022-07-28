@@ -1,26 +1,36 @@
+@qaEnv
+@dataTable
 Feature: Login
 
-Scenario: Successful Login with Valid Credentials
-  Given User Launch Chrome browser
-  When User opens URL "http://admin-demo.nopcommerce.com/login"
-  And User enters Email as "admin@yourstore.com" and Password as "admin"
-  And Click on Login
-  Then Page Title should be "Dashboard / nopCommerce administration"
-  When User click on Log out link
-  Then Page Title should be "Your store. Login"
-  And close browser
+  Background:
+    When User opens URL "http://admin-demo.nopcommerce.com/login"
+
+@qaEnv
+Scenario: Successful Login 1 with Valid Credentials
+    And User enters Email as "admin@yourstore.com" and Password as "admin"
+    And Click on Login
+    Then Page Title should be "Dashboard / nopCommerce administration"
+    When User click on Log out link
+    Then Page Title should be "Your store. Login"
+
+@qaEnv
+Scenario: Successful Login 2 with Valid Credentials
+    And User enters Email as email and Password as pass
+      | admin@yourstore.com | admin |
+    And Click on Login
+    Then Page Title should be "Dashboard / nopCommerce administration"
+    When User click on Log out link
+    Then Page Title should be "Your store. Login"
 
 #Data-Driven testing, login as multiple users
-#Scenario Outline: Login Data Driven
-#    Given User Launch Chrome browser
-#    When User opens URL "http://admin-demo.nopcommerce.com/login"
-#    And User enters Email as "<email>" and Password as "<password>"
-#    And Click on Login
-#    Then Page Title should be "Dashboard / nopCommerce administration"
-#    When User click on Log out link
-#    Then Page Title should be "Your store. Login"
-#    And close browser
-#    Examples:
-#      | email | password |
-#      | admin@yourstore.com | admin |
-#      | admin1@yourstore.com | admin1 |
+@ProdEnv
+Scenario Outline: Login with Data Driven Approach, valid and invalid tests
+    And User enters Email as "<email>" and Password as "<password>"
+    And Click on Login
+    Then Page Title should be "Dashboard / nopCommerce administration"
+    When User click on Log out link
+    Then Page Title should be "Your store. Login"
+    Examples:
+      | email | password |
+      | admin@yourstore.com | admin |
+      | admin1@yourstore.com | admin1 |
