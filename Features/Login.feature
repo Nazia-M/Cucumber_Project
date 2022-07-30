@@ -13,7 +13,7 @@ Scenario: Successful Login 1 with Valid Credentials
     When User click on Log out link
     Then Page Title should be "Your store. Login"
 
-@qaEnv
+@ProdEnv
 Scenario: Successful Login 2 with Valid Credentials
     And User enters Email as email and Password as pass
       | admin@yourstore.com | admin |
@@ -33,4 +33,4 @@ Scenario Outline: Login with Data Driven Approach, valid and invalid tests
     Examples:
       | email | password |
       | admin@yourstore.com | admin |
-      | admin1@yourstore.com | admin1 |
+#      | admin1@yourstore.com | admin1 |

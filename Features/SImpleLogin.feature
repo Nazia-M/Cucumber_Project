@@ -1,4 +1,3 @@
-@qaEnv
 Feature: Simple Login
 
 Scenario: Successful Login 1 with Valid Credentials
