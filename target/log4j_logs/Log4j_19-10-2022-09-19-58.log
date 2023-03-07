@@ -1,0 +1,10 @@
+2022-10-19 21:10:51 INFO  LoggerHelper:53 - scrollToEnd
+2022-10-19 21:10:264 INFO  LoggerHelper:57 - setNewsLetter
+2022-10-19 21:10:270 INFO  LoggerHelper:64 - implicitWait
+2022-10-19 21:10:275 INFO  LoggerHelper:71 - implicitWait
+2022-10-19 21:10:357 INFO  LoggerHelper:75 - active
+2022-10-19 21:10:512 INFO  LoggerHelper:79 - adminComment
+2022-10-19 21:10:524 INFO  LoggerHelper:83 - scrollToTop
+2022-10-19 21:10:105 INFO  LoggerHelper:89 - save
+2022-10-19 21:10:641 INFO  LoggerHelper:98 - Success Message Confirmed
+2022-10-19 21:10:642 INFO  LoggerHelper:103 - user_can_view_confirmation_message

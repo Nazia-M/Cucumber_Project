@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Cucumber Suite - API" duration-ms="8" started-at="2023-03-07T19:42:46 IST" finished-at="2023-03-07T19:42:46 IST">
+    <groups>
+    </groups>
+    <test name="Google API Testing" duration-ms="8" started-at="2023-03-07T19:42:46 IST" finished-at="2023-03-07T19:42:46 IST">
+    </test> <!-- Google API Testing -->
+  </suite> <!-- Cucumber Suite - API -->
+</testng-results>

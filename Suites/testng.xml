@@ -4,6 +4,7 @@
         <test name ="Test">
             <classes>
                 <class name ="testRunner.testRun"></class>
+<!--                <class name ="utilities.ExcelData"></class>-->
             </classes>
         </test>
 </suite>

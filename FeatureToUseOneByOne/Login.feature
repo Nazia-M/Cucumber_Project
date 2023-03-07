@@ -10,6 +10,8 @@ Scenario: Successful Login 1 with Valid Credentials
     And User enters Email as "admin@yourstore.com" and Password as "admin"
     And Click on Login
     Then Page Title should be "Dashboard / nopCommerce administration"
+  | email | password |
+  | dmin  | admin   |
     When User click on Log out link
     Then Page Title should be "Your store. Login"
 

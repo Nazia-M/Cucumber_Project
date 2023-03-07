@@ -1,17 +1,17 @@
 package testRunner;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
-import org.junit.runner.RunWith;
-
-@RunWith(Cucumber.class)
 @CucumberOptions
 (
-                features = ".//Features/Customers.feature",
-                glue= "stepDefinitions",
+                features = ".//Features",
+                glue="stepDefinitions",
                 dryRun=false,
                 monochrome=false,
-                plugin= {"pretty", "html:test-output"}
+                plugin= {"pretty",
+                        "html:target/cucumber-reports/cucumber-html-report.html",
+                        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+//                tags = "@qaEnv and not @ProdEnv and @dataTable"
 )
-public class testRun {
+public class testRun extends AbstractTestNGCucumberTests {
 }

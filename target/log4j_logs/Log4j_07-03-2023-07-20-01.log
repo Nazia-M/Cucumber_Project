@@ -1,0 +1,10 @@
+2023-03-07 19:03:111 INFO  LoggerHelper:53 - scrollToEnd
+2023-03-07 19:03:257 INFO  LoggerHelper:57 - setNewsLetter
+2023-03-07 19:03:259 INFO  LoggerHelper:64 - implicitWait
+2023-03-07 19:03:262 INFO  LoggerHelper:71 - implicitWait
+2023-03-07 19:03:313 INFO  LoggerHelper:75 - active
+2023-03-07 19:03:427 INFO  LoggerHelper:79 - adminComment
+2023-03-07 19:03:435 INFO  LoggerHelper:83 - scrollToTop
+2023-03-07 19:03:293 INFO  LoggerHelper:89 - save
+2023-03-07 19:03:529 INFO  LoggerHelper:98 - Success Message Confirmed
+2023-03-07 19:03:529 INFO  LoggerHelper:103 - user_can_view_confirmation_message

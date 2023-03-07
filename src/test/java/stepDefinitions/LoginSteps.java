@@ -1,15 +1,15 @@
 package stepDefinitions;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pageObjects.AddCustomerPage;
 import pageObjects.LoginPage;
 
-public class Steps extends BaseClass{
+import java.awt.*;
+import java.util.List;
+
+public class LoginSteps extends BaseClass{
 
     @Given("User Launch Chrome browser")
     public void user_Launch_Chrome_browser() {
@@ -22,7 +22,7 @@ public class Steps extends BaseClass{
     public void user_opens_URL(String url) throws InterruptedException {
         driver.get(url);
         driver.manage().window().maximize();
-        Thread.sleep(5000);
+        Thread.sleep(2000);
     }
 
     @When("User enters Email as {string} and Password as {string}")
@@ -31,9 +31,18 @@ public class Steps extends BaseClass{
         lp.setPassword(password);
     }
 
+    @When("User enters Email as email and Password as pass")
+    public void user_enters_email_as_email_and_password_as_pass(io.cucumber.datatable.DataTable dataTable) {
+        List<List<String>> data = dataTable.asLists();
+        String email = data.get(0).get(0);
+        String password = data.get(0).get(1);
+        lp.setUserName(email);
+        lp.setPassword(password);
+    }
+
     @When("Click on Login")
     public void click_on_Login() throws InterruptedException {
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         lp.clickLogin();
     }
 
@@ -52,61 +61,9 @@ public class Steps extends BaseClass{
 
     @When("User click on Log out link")
     public void user_click_on_Log_out_link() {
+
         lp.clickLogout();
     }
 
-    @Then("close browser")
-    public void close_browser() {
-        driver.quit();
-
-    }
-
-    //Customers feature step definitions
-    @Then("User can view Dashboard")
-    public void user_can_view_dashboard() {
-        addCust = new AddCustomerPage(driver);
-        Assert.assertEquals("Dashboard / nopCommerce administration",addCust.getPageTitle());
-    }
-    @When("User clicks on Customers Menu")
-    public void user_clicks_on_customers_menu() {
-        addCust.clickOnCustomerMenu();
-        implicitWait(5);
-
-    }
-    @When("click on customers Menu Item")
-    public void click_on_customers_menu_item() {
-        addCust.clickOnCustomerMenuItem();
-        implicitWait(5);
-    }
-    @When("click on Add new button")
-    public void click_on_add_new_button() {
-        addCust.clickOnAddNew();
-        implicitWait(5);
-    }
-
-    @Then("User can view Add new customer page")
-    public void user_can_view_add_new_customer_page() {
-        Assert.assertEquals("Add a new customer / nopCommerce administration", addCust.getPageTitle());
-    }
-    @When("User enters customer info")
-    public void user_enters_customer_info() {
-        addCust.setEmail(randomString());
-        addCust.setPassword("test123");
-        addCust.setFirstName("Kiya");
-        addCust.setLastName("Kim");
-        addCust.setGender();
-        addCust.setDOB("7/12/2022");
-        addCust.setCompanyName("Hyundai");
-        addCust.setTaxExempt();
-//        addCust.setNewsLetter();
-
-    }
-//    @When("click on Save button")
-//    public void click_on_save_button() {
-//
-//    }
-//    @Then("User can view confirmation message {string}")
-//    public void user_can_view_confirmation_message(String string) {
-//    }
 
 }
