@@ -1,8 +1,9 @@
 GoogleAPIs\addPlace.class
-stepDefinitions\Hooks.class
 stepDefinitions\LoginSteps.class
-pageObjects\LoginPage.class
 stepDefinitions\AddNewCustomer.class
-stepDefinitions\BaseClass.class
 testRunner\testRun.class
+stepDefinitions\Hooks.class
+pageObjects\LoginPage.class
+stepDefinitions\BaseClass.class
 pageObjects\AddCustomerPage.class
+GoogleAPIsPayload\payload.class
