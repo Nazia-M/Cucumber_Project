@@ -2,10 +2,10 @@
 <testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Cucumber Suite - API" duration-ms="7" started-at="2023-03-07T20:45:24 IST" finished-at="2023-03-07T20:45:24 IST">
+  <suite name="Cucumber Suite - API" duration-ms="12" started-at="2023-03-08T19:23:00 IST" finished-at="2023-03-08T19:23:00 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="7" started-at="2023-03-07T20:45:24 IST" finished-at="2023-03-07T20:45:24 IST">
+    <test name="Test" duration-ms="12" started-at="2023-03-08T19:23:00 IST" finished-at="2023-03-08T19:23:00 IST">
     </test> <!-- Test -->
   </suite> <!-- Cucumber Suite - API -->
 </testng-results>
