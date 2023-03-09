@@ -4,6 +4,8 @@
         <test name ="Test">
             <classes>
                 <class name ="GoogleAPIs.addPlace"></class>
+                <class name ="GoogleAPIs.updatePlace"></class>
+                <class name ="GoogleAPIs.getPlace"></class>
             </classes>
         </test>
 </suite>

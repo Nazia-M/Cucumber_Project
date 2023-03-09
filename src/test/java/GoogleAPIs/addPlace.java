@@ -5,6 +5,7 @@ import io.restassured.path.json.JsonPath;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
+//Run this class to execute addPlace -> updatePlace -> getPlace
 public class addPlace {
 
     //addPlace API response parameter place_Id, passed as input to updatePlace API
