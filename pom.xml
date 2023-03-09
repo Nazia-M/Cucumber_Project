@@ -111,6 +111,7 @@
 
         <!-- Git Commands       -->
                <!--        git status-->
+               <!--        git add -A-->
                <!--        git commit -m "API"-->
                <!--        git push -u origin master-->
 
