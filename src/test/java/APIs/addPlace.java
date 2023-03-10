@@ -1,5 +1,5 @@
-package GoogleAPIs;
-import GoogleAPIsPayload.payload;
+package APIs;
+import APIsPayload.payload;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import static io.restassured.RestAssured.*;

@@ -3,9 +3,9 @@
 <suite name="Cucumber Suite - API">
         <test name ="Test">
             <classes>
-                <class name ="GoogleAPIs.addPlace"></class>
-                <class name ="GoogleAPIs.updatePlace"></class>
-                <class name ="GoogleAPIs.getPlace"></class>
+                <class name ="APIs.addPlace"></class>
+                <class name ="APIs.updatePlace"></class>
+                <class name ="APIs.getPlace"></class>
             </classes>
         </test>
 </suite>

@@ -1,4 +1,4 @@
-package GoogleAPIs;
+package APIs;
 
 import io.restassured.path.json.JsonPath;
 

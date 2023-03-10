@@ -1,4 +1,4 @@
-package GoogleAPIsPayload;
+package APIsPayload;
 
 public class payload {
 
@@ -19,5 +19,16 @@ public class payload {
                 "  \"website\": \"http://google.com\",\n" +
                 "  \"language\": \"French-IN\"\n" +
                 "}";
+    }
+
+    public static String Addbook(String isbn, String aisle){
+        String payload = "{\n" +
+                "\n" +
+                "\"name\":\"Abbella\",\n" +
+                "\"isbn\":\""+isbn+"\",\n" +
+                "\"aisle\":\""+aisle+"\",\n" +
+                "\"author\":\"Abbella\"\n" +
+                "}";
+        return payload;
     }
 }
