@@ -34,6 +34,9 @@ public class addPlace {
         updatePlace up = new updatePlace();
         up.updatePlace_Placeid();
 
+//        deletePlace dp = new deletePlace();
+//        dp.deletePlace();
+
     }
 
 }

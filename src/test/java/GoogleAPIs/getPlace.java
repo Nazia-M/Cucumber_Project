@@ -8,7 +8,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class getPlace {
 
-    public void getPlace(){
+    public void getPlace(String expectedResponse){
 
         //pass place_Id and validate updated address is coming
         String getPlaceResponce = given()
@@ -22,7 +22,8 @@ public class getPlace {
 
         JsonPath js = new JsonPath(getPlaceResponce);
         String actualAddress = js.getString("address");
-        Assert.assertEquals(actualAddress, updatePlace.new_address);
+        Assert.assertEquals(actualAddress, expectedResponse);
+
 
 
     }

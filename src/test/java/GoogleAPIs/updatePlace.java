@@ -24,6 +24,6 @@ public class updatePlace {
                 .body("msg", equalTo("Address successfully updated"));
 
         getPlace gp = new getPlace();
-        gp.getPlace();
+        gp.getPlace(new_address);
     }
 }
